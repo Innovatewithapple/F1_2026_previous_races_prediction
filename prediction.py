@@ -185,7 +185,7 @@ for country_folder in all_2026_folders:
         
     races_processed += 1
     match_status = "🎯 MATCH" if sorted_podium.loc[0, 'driver_number'] == actual_p1 else "❌ MISSED"
-    if sorted_podium.loc[0, 'driver_number'] == actual_p1: 
+    if sorted_podium.loc[0, 'driver_number'] == actual_p1:  
         perfect_p1_hits += 1
         
     print(f"\n🌍 Grand Prix Weekend: {grand_prix_name}")
@@ -202,3 +202,4 @@ print("🏁 LOCAL WORKSPACE ACCURACY SUMMARY")
 print("=" * 60)
 print(f"The 2.65 model correctly forecast the absolute winner in {perfect_p1_hits} out of {races_processed} live dynamic 2026 races!")
 print("=" * 60)
+
